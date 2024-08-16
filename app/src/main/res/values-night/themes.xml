@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Graduat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/theme_color</item>
+        <item name="colorSecondaryVariant">@color/theme_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/theme_color</item>
+        <!-- Customize your theme here. -->
+<!--        //added-->
+
+
+
+    </style>
+    <style name="text_splash">
+        <item name="color">@color/white</item>
+    </style>
+    <style name="register_btn">
+
+        <item name="android:background">@drawable/register_button_background_dark</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="register_text_phone_page">
+        <item name="android:textColor">@color/theme_color</item>
+    </style>
+    <style name="back_button_style">
+        <item name="android:background">@drawable/backbtndark</item>
+    </style>
+    <style name="otp_text_style">
+        <item name="android:background">@drawable/otb_back_ground_dark</item>
+    </style>
+    <style name="app_background">
+        <item name="android:background">@color/dark_background</item>
+
+    </style>
+    <style name="pick_timeStyle">
+        <item name="android:background">@drawable/otb_back_ground_light</item>
+
+    </style>
+</resources>

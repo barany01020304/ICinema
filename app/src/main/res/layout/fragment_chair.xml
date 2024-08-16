@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/app_background"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.ChairFragment">
+
+        <RelativeLayout
+            android:id="@+id/up_cointainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                style="@style/back_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/top_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="180dp"
+                android:src="@drawable/two_yellow_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/up_cointainer">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/up_chair" />
+
+            <!--            <TableLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs0"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:visibility="invisible"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair0_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs1"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:visibility="invisible"-->
+
+            <!--                        android:id="@+id/chair1_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair1_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs2"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:visibility="invisible"-->
+
+            <!--                        android:id="@+id/chair2_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair2_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs3"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:visibility="invisible"-->
+
+            <!--                        android:id="@+id/chair3_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair3_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs4"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:visibility="invisible"-->
+
+            <!--                        android:id="@+id/chair4_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair4_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs5"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:visibility="invisible"-->
+
+            <!--                        android:id="@+id/chair5_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair5_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs6"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:visibility="invisible"-->
+
+            <!--                        android:id="@+id/chair6_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair6_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow-->
+            <!--                    android:id="@+id/chairs7"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginStart="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:weightSum="11">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_0"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_1"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_2"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_3"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_4"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:visibility="invisible"-->
+
+            <!--                        android:id="@+id/chair7_5"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_6"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_7"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_8"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_9"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/chair7_10"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:src="@drawable/white_chair" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--            </TableLayout>-->
+            <GridView
+                android:id="@+id/chair_grid"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+
+                android:numColumns="11"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/dark_chair" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/white_chair" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/white_chair"
+                    android:text="@string/ordinary"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/white_chair"
+                    android:text="@string/premium"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/black_chair" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/yellow_chair" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/white_chair"
+                    android:text="@string/booked"
+                    android:textAlignment="center"
+                    android:textColor="@color/darker_gray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/white_chair"
+                    android:text="@string/selected"
+                    android:textAlignment="center"
+                    android:textColor="@color/theme_color" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lines="2"
+                android:text="your ticket / \n 2 premuim 2 ordinary all eyuals 120EGP"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_btn"
+            style="@style/register_btn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

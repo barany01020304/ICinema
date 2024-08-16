@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/movie_container_drawable"
+            tools:context=".fragment.CinemaFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/up_cointainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/x_button"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="60dp"
+                        android:background="@drawable/x_close"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/top_text_view"
+                        style="@style/register_text_phone_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:text="@string/new_user"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/second_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/up_cointainer">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_photo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/cinemaone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@id/cinema_image"
+                        android:layout_width="102dp"
+                        android:layout_height="102dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/cinema_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/ciname_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/stolzl_bold"
+                        android:text="Galaxy cinema"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cinema_image" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/register_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/stolzl_bold"
+                        android:text="@string/follow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ciname_name" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/second_container" />
+
+                <HorizontalScrollView
+                    android:id="@+id/detail_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_light"
+                                android:text="10K rating"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_bold"
+                                android:gravity="bottom|center"
+                                android:text="3.5"
+                                android:textSize="25sp" />
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="top"
+                                android:src="@drawable/three_star" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@color/darker_gray" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_light"
+                                android:text="Followers"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_bold"
+                                android:gravity="bottom|center"
+                                android:text="63"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="top"
+                                android:gravity="center"
+                                android:text="count" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@color/darker_gray" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_light"
+                                android:text="Location"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_bold"
+                                android:gravity="bottom|center"
+                                android:text="Cairo"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="top"
+                                android:gravity="center"
+                                android:text="Egypt" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@color/darker_gray" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_light"
+                                android:text="Size"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/stolzl_bold"
+                                android:gravity="bottom|center"
+                                android:text="430"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="top"
+                                android:gravity="center"
+                                android:text="Chairs" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/detail_scroll" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/cinema_view_recycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="@id/image_background"
+                            app:layout_constraintStart_toStartOf="@id/image_background"
+                            app:layout_constraintTop_toTopOf="@+id/image_background" />
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/image_background"
+                        android:layout_width="310dp"
+                        android:layout_height="210dp"
+                        android:background="@drawable/cinema_view_background"
+                        app:layout_constraintBottom_toBottomOf="@id/card"
+                        app:layout_constraintEnd_toEndOf="@id/card"
+                        app:layout_constraintStart_toStartOf="@id/card"
+                        app:layout_constraintTop_toTopOf="@+id/card" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.tabs.TabLayout
+
+                    android:id="@+id/tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

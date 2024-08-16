@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:background="@drawable/transparentbutton_drawbel"
+        android:layout_alignParentStart="true"
+        android:id="@+id/profile_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/profile_photo" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/register_text_phone_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="180dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:background="@drawable/transparentbutton_drawbel"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/search" />
+
+</RelativeLayout>

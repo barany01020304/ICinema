@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+<!--    app:cardElevation="12dp"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#161616">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/recycle_color"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/movie_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fourth_image" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Language"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/arrow_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/down_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/show_datils_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/show_details"
+                app:layout_constraintStart_toEndOf="@id/cardView"
+                app:layout_constraintTop_toBottomOf="@id/movie_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/first_cointainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/recycle_color"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+            <ImageView
+                android:id="@+id/calendar_draw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:padding="6dp"
+                android:src="@drawable/calendar_draw"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/date_text_view"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="17/9/2022"
+                app:layout_constraintStart_toEndOf="@id/calendar_draw"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/clock_draw"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:padding="6dp"
+                android:src="@drawable/clock_draw"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calendar_draw" />
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="10:00 am"
+                app:layout_constraintStart_toEndOf="@id/clock_draw"
+                app:layout_constraintTop_toBottomOf="@id/date_text_view" />
+
+            <ImageView
+                android:id="@+id/chair_draw"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:padding="6dp"
+                android:src="@drawable/chairs_draw"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clock_draw" />
+
+            <TextView
+                android:id="@+id/chair_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="b5-b6-b7"
+                app:layout_constraintStart_toEndOf="@id/chair_draw"
+                app:layout_constraintTop_toBottomOf="@id/time_text_view" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/qr_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        android:background="@drawable/in_recycle"-->
+        <LinearLayout
+
+            android:id="@+id/second_cointainer"
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_cointainer">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/active_ticket_button"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/guest_button_background"
+                android:textColor="@color/black"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Active Ticket"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/back_button_background"
+                android:id="@+id/reset_time_button"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Reset Time"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/back_button_background"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/refund_button"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Refund"
+               />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
