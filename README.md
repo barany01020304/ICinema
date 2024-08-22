@@ -8,7 +8,7 @@
 ##### User-friendly Interface: Intuitive and easy-to-use interface.
 ## Technologies Used
 ##### DataBinding: For binding UI components in layouts to data sources in your app.
-##### Room Database: For local data storage and management.
+##### Realm Database: For local data storage and management.
 ##### Retrofit: For making network requests to fetch movie data.
 ##### ExoPlayer: For media playback.
 ##### Location Services: To get the user’s current location.
